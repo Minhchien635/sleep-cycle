@@ -1,0 +1,19 @@
+.title{
+    text-align: center;
+}
+
+.label{
+    font-size: 20px;
+}
+
+.form{
+    background-color: rgb(164, 255, 247);
+    border-radius: 30px;
+    padding: 40px;
+    width:50%;
+    margin-left: 25%;
+}
+
+.form-control{
+    border-radius: 10px;
+}
