@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./SleepCycle.css";
+import "./css/SleepCycle.css";
 import Input from "./components/Input";
 
 export default function App() {
@@ -34,7 +34,7 @@ export default function App() {
       parseInt(minuteBedTime) / 60 +
       parseInt(numHour) * 1.5 +
       0.233333;
-    console.log(parseFloat(hou));
+
     if (!parseFloat(hou)) return;
     let min;
     console.log(hou);
@@ -48,23 +48,25 @@ export default function App() {
 
   return (
     <>
-      <h2 className="title">Chu kỳ giấc ngủ</h2>
-      <div className="form">
-        <h4 className="mb-4">
-          Thời gian thức giấc: {hour} {minute}
-        </h4>
-        <Input label="Giờ bắt đầu ngủ" setState={setBedTime} />
-        <Input label="Phút bắt đầu ngủ" setState={setMinuteBedTime} />
-        <Input
-          label="Số chu kỳ giấc ngủ (từ 3 -> 6 chu kỳ là tốt nhất)"
-          setState={setNumHour}
-        />
-        <button
-          className="form-control btn btn-primary mb-3 mt-3"
-          onClick={handleClick}
-        >
-          Tính
-        </button>
+      <div>
+        <h2 className="title">Chu kỳ giấc ngủ</h2>
+        <div className="form">
+          <h4 className="mb-4">
+            Thời gian thức giấc: {hour} {minute}
+          </h4>
+          <Input label="Giờ bắt đầu ngủ" setState={setBedTime} />
+          <Input label="Phút bắt đầu ngủ" setState={setMinuteBedTime} />
+          <Input
+            label="Số chu kỳ giấc ngủ (từ 3 -> 6 chu kỳ là tốt nhất)"
+            setState={setNumHour}
+          />
+          <button
+            className="form-control btn btn-primary mb-3 mt-3"
+            onClick={handleClick}
+          >
+            Tính
+          </button>
+        </div>
       </div>
     </>
   );

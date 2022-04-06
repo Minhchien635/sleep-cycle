@@ -1,5 +1,5 @@
 import React from "react";
-import "../SleepCycle.css";
+import "../css/SleepCycle.css";
 
 export default function Input(props) {
   const { label, setState } = props;

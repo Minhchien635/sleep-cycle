@@ -1,0 +1,10 @@
+.tag {
+    background-color:rgb(255, 238, 2);
+    border-radius:15px;
+    padding: 20px;
+}
+
+.tag:hover{
+    background-color: rgb(255, 247, 142);
+
+}

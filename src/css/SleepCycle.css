@@ -9,9 +9,7 @@
 .form{
     background-color: rgb(164, 255, 247);
     border-radius: 30px;
-    padding: 40px;
-    width:50%;
-    margin-left: 25%;
+    padding: 23px;
 }
 
 .form-control{
