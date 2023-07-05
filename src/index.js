@@ -10,6 +10,6 @@ const root = ReactDOMClient.createRoot(container);
 
 root.render(  
   <BrowserRouter>
-    <App />
+    <App   />
   </BrowserRouter>
 );
